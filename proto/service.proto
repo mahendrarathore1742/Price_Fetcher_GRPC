@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package = "github.com/mahendrarathore1742/priceFetcher/proto";
+
+message PriceRequest {
+	string ticker = 1;
+}
+
+message PriceResponse {
+	string ticker = 1;
+	float price = 2;
+}
+
+service PriceFetcher {
+	rpc FetchPrice(PriceRequest) returns (PriceResponse);
+}
