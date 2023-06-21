@@ -25,5 +25,5 @@ func (s *priceService) FetchPrice(_ context.Context, ticker string) (float64, er
 var priceMocker = map[string]float64{
 	"BTC": 20_000.0,
 	"ETH": 200.0,
-	"RR":  100_00.0,
+	"MSR": 100_00.0,
 }
